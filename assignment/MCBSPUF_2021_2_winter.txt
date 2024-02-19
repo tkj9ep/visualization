@@ -1,0 +1,1160 @@
+Variable           Format    Q#/Freq             Description/Label
+ 
+PUF_ID             PUFFMT                        Unique PUF Identification Number         
+                             10,628    LOW-HIGH          PUF_ID Count                                                               
+ 
+SURVEYYR           SVYRFMT                       Survey year                              
+                             10,628                2021  2021                                                                       
+         Notes:  Previously named SVYYR.
+ 
+VERSION            VERSFMT                       Version number                           
+                             10,628                   1  Version 1                                                                  
+                 First available in 2017
+ 
+ACW_D_ERVIST       YESFMT    AC1                 ER visit in this or any of prev 2 rounds 
+                                 27                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                                160                   .  Inapplicable/Missing                                                       
+                              2,445                   1  1:Yes                                                                      
+                              7,995                   2  2:No                                                                       
+                 First available in 2017
+ 
+ACW_D_OPVIST       YESFMT    AC8                 OP visit in this or any of prev 2 rounds 
+                                 33                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                                160                   .  Inapplicable/Missing                                                       
+                              2,995                   1  1:Yes                                                                      
+                              7,439                   2  2:No                                                                       
+                 First available in 2017
+ 
+ACW_OPDMCOND       INDPUF    AC9                 Reason for OPD visit: medical condition  
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              1,697                   0  0:Not indicated                                                            
+                              1,120                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDMCOND.
+ 
+ACW_OPDTESTS       INDPUF    AC9                 Reason for OPD visit: tests              
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              1,383                   0  0:Not indicated                                                            
+                              1,434                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDTESTS.
+ 
+ACW_OPDFOLUP       INDPUF    AC9                 Reason for OPD visit: follow-up          
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              2,636                   0  0:Not indicated                                                            
+                                181                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDFOLUP.
+ 
+ACW_OPDCHKUP       INDPUF    AC9                 Reason for OPD visit: checkup            
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              2,609                   0  0:Not indicated                                                            
+                                208                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDCHKUP.
+ 
+ACW_OPDRFRL        INDPUF    AC9                 Reason for OPD visit: referral           
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              2,803                   0  0:Not indicated                                                            
+                                 14                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDRFRL.
+ 
+ACW_OPDSURGY       INDPUF    AC9                 Reason for OPD visit: surgery            
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              2,507                   0  0:Not indicated                                                            
+                                310                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDSURGY.
+ 
+ACW_OPDPSHOT       INDPUF    AC9                 Reason for OPD visit: preventative shot  
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              2,736                   0  0:Not indicated                                                            
+                                 81                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDPSHOT.
+ 
+ACW_OPDTSHOT       INDPUF    AC9                 Reason for OPD visit: treatment shot     
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              2,708                   0  0:Not indicated                                                            
+                                109                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDTSHOT.
+ 
+ACW_OPDPMED        INDPUF    AC9                 Reason for OPD visit: medication         
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              2,783                   0  0:Not indicated                                                            
+                                 34                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDPMED.
+ 
+ACW_OPDOTHER       INDPUF    AC9                 Reason for OPD visit: other              
+                                155                   D  .D:Don't know                                                              
+                                 23                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              2,710                   0  0:Not indicated                                                            
+                                107                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDOTHER.
+ 
+ACW_OPDAPPT        APPTFMT   AC12                OPD visit by appt or walk-in             
+                                161                   D  .D:Don't know                                                              
+                                  4                   N  .N:Not ascertained                                                         
+                                 22                   R  .R:Refused                                                                 
+                              7,633                   .  Inapplicable/Missing                                                       
+                              2,204                   1  1:Appointment                                                              
+                                604                   2  2:Walked in                                                                
+         Notes:  Applies only if ACW_D_OPVIST=1.
+                 Previously named ACC_OPDAPPT.
+ 
+ACW_OPDDRTEL       TOLDFMT   AC13                Did someone in OPD tell to come back     
+                                 27                   D  .D:Don't know                                                              
+                              8,424                   .  Inapplicable/Missing                                                       
+                                850                   1  1:Someone made appt during earlier visit                                   
+                                637                   2  2:SP contacted office to set up appt                                       
+                                690                   3  3:Dr office contacted SP to set up appt                                    
+         Notes:  Applies only if ACW_OPDAPPT = 1.
+                 Previously named ACC_OPDDRTEL.
+ 
+ACW_D_OPAPPT       APPTTIME  AC14                Days waited for OPD appointment          
+                                121                   D  .D:Don't know                                                              
+                                  2                   N  .N:Not ascertained                                                         
+                              8,451                   .  Inapplicable/Missing                                                       
+                                498                   0  0:Didn't have wait                                                         
+                                256                   1  1:1 to 3 days                                                              
+                                390                   2  2:4 to 9 days                                                              
+                                910                   3  3:10 or more days                                                          
+         Notes:  Applies only if ACW_OPDAPPT = 1.
+                 Previously named ACC_D_OPAPPT.
+ 
+ACW_DVNEED         YESFMT    DU15                Ever a time SP couldn’t get dental care? 
+                                 13                   D  .D:Don't know                                                              
+                                  4                   R  .R:Refused                                                                 
+                                160                   .  Inapplicable/Missing                                                       
+                              1,003                   1  1:Yes                                                                      
+                              9,448                   2  2:No                                                                       
+                 First available in 2017
+ 
+ACW_DVNDCOST       INDPUF    DU16                Cldn’t get dental: cost                  
+                                  4                   D  .D:Don't know                                                              
+                              9,625                   .  Inapplicable/Missing                                                       
+                                554                   0  0:Not indicated                                                            
+                                445                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_DVNEED=1.
+                 First available in 2017
+ 
+ACW_MADVDFRF       REFDIF    AC33                Difficulty get referrals thru Mcare Adv  
+                                 18                   D  .D:Don't know                                                              
+                                 17                   N  .N:Not ascertained                                                         
+                                  2                   R  .R:Refused                                                                 
+                              5,219                   .  Inapplicable/Missing                                                       
+                                173                   1  1:Yes                                                                      
+                              4,711                   2  2:No                                                                       
+                                488                   3  3:N/A - haven't tried to obtain referral                                   
+         Notes:  Applies only to beneficiaries participating in Mcare Adv.
+                 Previously named MA_MADVDFRF.
+ 
+ACW_MADVNOEM       MADVNOEM  AC36                Mcare Adv refused to pay emergency care  
+                                 26                   D  .D:Don't know                                                              
+                                 17                   N  .N:Not ascertained                                                         
+                                  2                   R  .R:Refused                                                                 
+                              5,219                   .  Inapplicable/Missing                                                       
+                                 98                   1  1:1:Yes                                                                    
+                              4,486                   2  2:2:No                                                                     
+                                780                   3  3:N/A, haven't needed emergency treatment                                  
+         Notes:  Applies only to beneficiaries participating in Mcare Adv.
+                 Previously named MA_MADVNOEM.
+ 
+ACW_PLACEPAR       YESFMT    US1                 Ever go to particular place for med care 
+                                  2                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                             10,020                   1  1:Yes                                                                      
+                                605                   2  2:No                                                                       
+         Notes:  Previously named ACC_PLACEPAR.
+ 
+ACW_PLACEKND       SITE2FMT  US2                 Kind of place usually go for med care    
+                                  7                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                                608                   .  Inapplicable/Missing                                                       
+                              8,981                   1  1:Dr office/Medical clinic/VA facility                                     
+                                380                   2  2:Managed care plan center/HMO                                             
+                                171                   3  3:Other clinic (rural,company,family,etc)                                  
+                                408                   4  4:Urgent care/Hospital/ER                                                  
+                                 71                   5  5:Other/At home                                                            
+         Notes:  Applies only if ACW_PLACEPAR = 1.
+                 Previously named ACC_PLACEKND.
+ 
+ACW_PVSPEC         PVSPEC    US6A                Doctor specialty: Usual source of care   
+                                331                   D  .D:Don't know                                                              
+                                  3                   N  .N:Not ascertained                                                         
+                                  1                   R  .R:Refused                                                                 
+                                998                   .  Inapplicable/Missing                                                       
+                              7,812                   1  1:Primary Care                                                             
+                                  9                   2  2:Obstetrics/Gynecology                                                    
+                                  6                   4  4:Orthopedics                                                              
+                                  9                   5  5:Psychiatry/Psychology                                                    
+                                 77                   6  6:Cardiology                                                               
+                                  2                   7  7:Dermatology                                                              
+                                  2                   8  8:Urology                                                                  
+                                 33                   9  9:Surgery                                                                  
+                                189                  10  10:Gerontology                                                             
+                                216                  11  11:Osteopathy/DO                                                           
+                                464                  12  12:Nurse practioner                                                        
+                                238                  13  13:Physicians assistant                                                    
+                                238                  14  14:Other                                                                   
+         Notes:  Complex skip logic. Please see questionnaire.
+                 First available in 2019
+ 
+ACW_PLACEMCP       YESFMT    US2A                Dr/clinic associated with MCP            
+                                 48                   D  .D:Don't know                                                              
+                                 13                   N  .N:Not ascertained                                                         
+                              5,156                   .  Inapplicable/Missing                                                       
+                              5,165                   1  1:Yes                                                                      
+                                246                   2  2:No                                                                       
+         Notes:  Applies only if SP currently belongs to a managed care plan.
+                 Previously named ACC_PLACEMCP.
+ 
+ACW_USUALDOC       YESFMT    US4                 Have particular Dr usually see           
+                                  2                   D  .D:Don't know                                                              
+                                  1                   N  .N:Not ascertained                                                         
+                                  1                   R  .R:Refused                                                                 
+                              7,514                   .  Inapplicable/Missing                                                       
+                              2,724                   1  1:Yes                                                                      
+                                386                   2  2:No                                                                       
+         Notes:  Applies only if usual source of care is not home or doctor’s office.
+                 Previously named ACC_USUALDOC.
+ 
+ACW_GETUSHOW       SHOWFMT   US8                 How usually get to Dr office             
+                                  2                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                                640                   .  Inapplicable/Missing                                                       
+                                212                   1  1:Walking                                                                  
+                              7,195                   2  2:Driving                                                                  
+                              2,035                   3  3:Being driven                                                             
+                                 85                   4  4:Ambulance or other special vehicle                                       
+                                 79                   5  5:Taxi                                                                     
+                                243                   6  6:Other public transportation                                              
+                                136                   7  7:Other                                                                    
+         Notes:  Previously named ACC_GETUSHOW.
+ 
+ACW_D_GETUS        MINSFMT   US9                 Time it usually takes to get Dr office   
+                                 11                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                                702                   .  Inapplicable/Missing                                                       
+                              5,930                   1  1:0 to 15 mins                                                             
+                              3,080                   2  2:16 to 30 mins                                                            
+                                599                   3  3:31 to 59 mins                                                            
+                                241                   4  4:60 to 119 mins                                                           
+                                 64                   5  5:2 hours or more                                                          
+         Notes:  Previously named ACC_D_GETUS.
+ 
+ACW_ACCOMPUS       YESFMT    US10                Does someone accompany to Dr office      
+                                  5                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                                672                   .  Inapplicable/Missing                                                       
+                              3,198                   1  1:Yes                                                                      
+                              6,752                   2  2:No                                                                       
+         Notes:  Previously named ACC_ACCOMPUS.
+ 
+ACW_ACCWRITE       INDPUF    US11AA              Someone accompanies to take notes        
+                                  1                   D  .D:Don't know                                                              
+                              7,430                   .  Inapplicable/Missing                                                       
+                              1,883                   0  0:Not indicated                                                            
+                              1,314                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_ACCOMPUS = 1.
+                 Previously named ACC_ACCWRITE.
+ 
+ACW_ACCEXPDR       INDPUF    US11AA              Someone accompanies explain things to dr 
+                                  1                   D  .D:Don't know                                                              
+                              7,430                   .  Inapplicable/Missing                                                       
+                              1,825                   0  0:Not indicated                                                            
+                              1,372                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_ACCOMPUS = 1.
+                 Previously named ACC_ACCEXPDR.
+ 
+ACW_ACCEXPSP       INDPUF    US11AA              Someone accompanies explain instructions 
+                                  1                   D  .D:Don't know                                                              
+                              7,430                   .  Inapplicable/Missing                                                       
+                              2,091                   0  0:Not indicated                                                            
+                              1,106                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_ACCOMPUS = 1.
+                 Previously named ACC_ACCEXPSP.
+ 
+ACW_ACCASKQS       INDPUF    US11AA              Someone accompanies to ask questions     
+                                  1                   D  .D:Don't know                                                              
+                              7,430                   .  Inapplicable/Missing                                                       
+                              1,915                   0  0:Not indicated                                                            
+                              1,282                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_ACCOMPUS = 1.
+                 Previously named ACC_ACCASKQS.
+ 
+ACW_ACCTRANS       INDPUF    US11AA              Someone accompanies to translate         
+                                  1                   D  .D:Don't know                                                              
+                              7,430                   .  Inapplicable/Missing                                                       
+                              3,061                   0  0:Not indicated                                                            
+                                136                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_ACCOMPUS = 1.
+                 Previously named ACC_ACCTRANS.
+ 
+ACW_ACCAPPTS       INDPUF    US11AA              Someone accompanies to schedule appt     
+                                  1                   D  .D:Don't know                                                              
+                              7,430                   .  Inapplicable/Missing                                                       
+                              2,372                   0  0:Not indicated                                                            
+                                825                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_ACCOMPUS = 1.
+                 Previously named ACC_ACCAPPTS.
+ 
+ACW_ACCMORAL       INDPUF    US11AA              Someone accompanies for moral support    
+                                  1                   D  .D:Don't know                                                              
+                              7,430                   .  Inapplicable/Missing                                                       
+                              2,297                   0  0:Not indicated                                                            
+                                900                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_ACCOMPUS = 1.
+                 Previously named ACC_ACCMORAL.
+ 
+ACW_ACCDRIVE       INDPUF    US11AA              Someone accompanies for transportation   
+                                  1                   D  .D:Don't know                                                              
+                              7,430                   .  Inapplicable/Missing                                                       
+                              1,122                   0  0:Not indicated                                                            
+                              2,075                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_ACCOMPUS = 1.
+                 Previously named ACC_ACCDRIVE.
+ 
+ACW_ACCHELP        INDPUF    US11AA              Someone accompanies to assist with ADLs  
+                                  1                   D  .D:Don't know                                                              
+                              7,430                   .  Inapplicable/Missing                                                       
+                              2,666                   0  0:Not indicated                                                            
+                                531                   1  1:Indicated                                                                
+         Notes:  Applies only if ACW_ACCOMPUS = 1.
+                 Previously named ACC_ACCHELP.
+ 
+ACW_PROVYR         YESFMT    PP1A                SP seen provider in last 12 months       
+                                 63                   D  .D:Don't know                                                              
+                                608                   .  Inapplicable/Missing                                                       
+                              9,073                   1  1:Yes                                                                      
+                                884                   2  2:No                                                                       
+                 First available in 2017
+ 
+ACW_DOCHLTH        HOWOFTN   PP8                 How often provider asks about SP's life  
+                                139                   D  .D:Don't know                                                              
+                                  4                   R  .R:Refused                                                                 
+                              1,555                   .  Inapplicable/Missing                                                       
+                              1,559                   1  1:Never                                                                    
+                              1,825                   2  2:Sometimes                                                                
+                              1,463                   3  3:Usually                                                                  
+                              4,083                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_PROVYR = 1.
+                 First available in 2017
+ 
+ACW_DOCEASY        HOWOFTN   PP9                 Provider explains things clearly         
+                                 36                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                              1,555                   .  Inapplicable/Missing                                                       
+                                120                   1  1:Never                                                                    
+                                473                   2  2:Sometimes                                                                
+                              1,061                   3  3:Usually                                                                  
+                              7,381                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_PROVYR = 1.
+                 First available in 2017
+ 
+ACW_HLTHIDEA       HOWOFTN   PP13                Provider asks to improve health          
+                                211                   D  .D:Don't know                                                              
+                                  6                   R  .R:Refused                                                                 
+                              1,555                   .  Inapplicable/Missing                                                       
+                              2,731                   1  1:Never                                                                    
+                              2,017                   2  2:Sometimes                                                                
+                              1,126                   3  3:Usually                                                                  
+                              2,982                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_PROVYR = 1.
+                 First available in 2017
+ 
+ACW_STHLTHGL       YYN       PP15                Provider talked to SP about health goals 
+                                127                   D  .D:Don't know                                                              
+                                  4                   R  .R:Refused                                                                 
+                              1,555                   .  Inapplicable/Missing                                                       
+                              3,561                   1  1:Yes, definitely                                                          
+                              2,302                   2  2:Yes, somewhat                                                            
+                              3,079                   3  3:No                                                                       
+         Notes:  Applies only if ACW_PROVYR = 1.
+                 First available in 2017
+ 
+ACW_MTHLTHGL       YYN       PP16                Care helped reach goals                  
+                                 49                   D  .D:Don't know                                                              
+                              4,765                   .  Inapplicable/Missing                                                       
+                              3,588                   1  1:Yes, definitely                                                          
+                              1,981                   2  2:Yes, somewhat                                                            
+                                245                   3  3:No                                                                       
+         Notes:  Applies only if ACW_STHLTHGL = 1 or 2.
+                 First available in 2017
+ 
+ACW_USCKEVRY       AGREE     US27                Dr checks everything when examining      
+                                 43                   D  .D:Don't know                                                              
+                                  8                   R  .R:Refused                                                                 
+                                608                   .  Inapplicable/Missing                                                       
+                              4,756                   1  1:Agree a lot                                                              
+                              4,695                   2  2:Agree a little                                                           
+                                356                   3  3:Neither agree nor disagree                                               
+                                 51                   4  4:Disagree a little                                                        
+                                111                   5  5:Disagree a lot                                                           
+         Notes:  Applies only if ACW_PLACEPAR = 1.
+                 Previously named ACC_USCKEVRY.
+ 
+ACW_USUNWRNG       AGREE     US27                Dr completely understands what's wrong   
+                                 61                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                                608                   .  Inapplicable/Missing                                                       
+                              4,796                   1  1:Agree a lot                                                              
+                              4,630                   2  2:Agree a little                                                           
+                                384                   3  3:Neither agree nor disagree                                               
+                                 46                   4  4:Disagree a little                                                        
+                                101                   5  5:Disagree a lot                                                           
+         Notes:  Applies only if ACW_PLACEPAR = 1.
+                 First available in 2017
+ 
+ACW_ORDRTEST       YESFMT    PP21                Provider ordered tests                   
+                                 52                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                              1,555                   .  Inapplicable/Missing                                                       
+                              8,001                   1  1:Yes                                                                      
+                              1,018                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PROVYR = 1.
+                 First available in 2017
+ 
+ACW_TSTFLWUP       HOWOFTN   PP22                Provider followed up about tests         
+                                 31                   D  .D:Don't know                                                              
+                              2,627                   .  Inapplicable/Missing                                                       
+                                247                   1  1:Never                                                                    
+                                356                   2  2:Sometimes                                                                
+                                629                   3  3:Usually                                                                  
+                              6,613                   4  4:Always                                                                   
+                                125                   5  5:No test result yet                                                       
+         Notes:  Applies only if ACW_ORDRTEST = 1.
+                 First available in 2017
+ 
+ACW_RQSTRSLT       HOWOFTN   PP23                How often SP requested test results      
+                                 13                   D  .D:Don't know                                                              
+                              2,752                   .  Inapplicable/Missing                                                       
+                              6,774                   1  1:Never                                                                    
+                                685                   2  2:Sometimes                                                                
+                                135                   3  3:Usually                                                                  
+                                269                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_ORDRTEST = 1.
+                 First available in 2017
+ 
+ACW_RSLTEASY       HOWOFTN   PP24                How often test results presented clearly 
+                                 37                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              2,752                   .  Inapplicable/Missing                                                       
+                                142                   1  1:Never                                                                    
+                                444                   2  2:Sometimes                                                                
+                              1,011                   3  3:Usually                                                                  
+                              6,241                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_ORDRTEST = 1.
+                 First available in 2017
+ 
+ACW_HLTHSRVC       YESFMT    PP29                SP needed home services                  
+                                  4                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                              1,555                   .  Inapplicable/Missing                                                       
+                                932                   1  1:Yes                                                                      
+                              8,135                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PROVYR = 1.
+                 First available in 2017
+ 
+ACW_GIVEINST       YESFMT    PP31                Provider gave health care instructions   
+                                 75                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                              1,555                   .  Inapplicable/Missing                                                       
+                              5,328                   1  1:Yes                                                                      
+                              3,668                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PROVYR = 1.
+                 First available in 2017
+ 
+ACW_ANYRX          YESFMT    PP35                SP took prescription medcines            
+                                  2                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              1,555                   .  Inapplicable/Missing                                                       
+                              8,735                   1  1:Yes                                                                      
+                                335                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PROVYR = 1.
+                 First available in 2017
+ 
+ACW_TALKRX         HOWOFTN   PP36                Provider told SP how to take meds        
+                                 65                   D  .D:Don't know                                                              
+                                  7                   R  .R:Refused                                                                 
+                              1,893                   .  Inapplicable/Missing                                                       
+                              2,276                   1  1:Never                                                                    
+                              1,268                   2  2:Sometimes                                                                
+                              1,095                   3  3:Usually                                                                  
+                              4,024                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_ANYRX = 1.
+                 First available in 2017
+ 
+ACW_BADRCTN        HOWOFTN   PP38                Provider talked about bad reactions      
+                                115                   D  .D:Don't know                                                              
+                                  4                   R  .R:Refused                                                                 
+                              1,893                   .  Inapplicable/Missing                                                       
+                              4,517                   1  1:Never                                                                    
+                              1,053                   2  2:Sometimes                                                                
+                                676                   3  3:Usually                                                                  
+                              2,370                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_ANYRX = 1.
+                 First available in 2017
+ 
+ACW_CARESPCL       YESFMT    US37A               See specialist outside PCP office        
+                                 48                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                                608                   .  Inapplicable/Missing                                                       
+                              6,838                   1  1:Yes                                                                      
+                              3,133                   2  2:No                                                                       
+         Notes:  Complex skip logic. Please see USQ Community Questionnaire.
+                 First available in 2017
+ 
+ACW_DRINFRMD       HOWOFTN   PP37B               How often PCP seem informed of spec care 
+                                352                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              3,790                   .  Inapplicable/Missing                                                       
+                                437                   1  1:Never                                                                    
+                                596                   2  2:Sometimes                                                                
+                              1,120                   3  3:Usually                                                                  
+                              4,332                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_CARESPCL = 1.
+                 First available in 2017
+ 
+ACW_REMINDDR       HOWOFTN   PP37C               How often remind PCP about spec care     
+                                135                   D  .D:Don't know                                                              
+                                  5                   R  .R:Refused                                                                 
+                              3,790                   .  Inapplicable/Missing                                                       
+                              4,953                   1  1:Never                                                                    
+                              1,142                   2  2:Sometimes                                                                
+                                219                   3  3:Usually                                                                  
+                                384                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_CARESPCL = 1.
+                 First available in 2017
+ 
+ACW_STPMSPCL       YESFMT    PP37D               Specialist outside pcp prescribe Rx      
+                                 26                   D  .D:Don't know                                                              
+                              3,790                   .  Inapplicable/Missing                                                       
+                              4,683                   1  1:Yes                                                                      
+                              2,129                   2  2:No                                                                       
+         Notes:  Applies only if ACW_CARESPCL = 1.
+                 First available in 2017
+ 
+ACW_TALKPMS        HOWOFTN   PP37E               How often PCP talk abt spec prescr'd Rx  
+                                 93                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              5,945                   .  Inapplicable/Missing                                                       
+                              1,438                   1  1:Never                                                                    
+                              1,078                   2  2:Sometimes                                                                
+                                535                   3  3:Usually                                                                  
+                              1,538                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_STPMSPCL = 1.
+                 First available in 2017
+ 
+ACW_KNOWSPCL       YYN       PP37F               Specialist knows enough of med history   
+                                126                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                              3,790                   .  Inapplicable/Missing                                                       
+                              5,293                   1  1:Yes, definitely                                                          
+                              1,096                   2  2:Yes, somewhat                                                            
+                                320                   3  3:No                                                                       
+         Notes:  Applies only if ACW_CARESPCL = 1.
+                 First available in 2017
+ 
+ACW_DRREPEAT       HOWOFTN   PP37G               How often SP repeats info to specialist  
+                                167                   D  .D:Don't know                                                              
+                                  6                   R  .R:Refused                                                                 
+                              3,790                   .  Inapplicable/Missing                                                       
+                              4,774                   1  1:Never                                                                    
+                              1,298                   2  2:Sometimes                                                                
+                                191                   3  3:Usually                                                                  
+                                402                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_CARESPCL = 1.
+                 First available in 2017
+ 
+ACW_KNOWRSLT       HOWOFTN   PP49                How often specialists know SP test rslts 
+                                649                   D  .D:Don't know                                                              
+                                  7                   R  .R:Refused                                                                 
+                              3,790                   .  Inapplicable/Missing                                                       
+                              1,453                   1  1:Never                                                                    
+                                672                   2  2:Sometimes                                                                
+                                749                   3  3:Usually                                                                  
+                              3,308                   4  4:Always                                                                   
+         Notes:  Applies only if ACW_PROVYR=1 or ACW_CARESPCL = 1
+                 First available in 2020
+ 
+ACW_HOSADMIT       YESFMT    PP50                SP admitted to hospital overnight        
+                                 25                   D  .D:Don't know                                                              
+                                609                   .  Inapplicable/Missing                                                       
+                              1,470                   1  1:Yes                                                                      
+                              8,524                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PROVYR NE . and ACW_CARESPCL NE .
+                 First available in 2017
+ 
+ACW_PRVNOMED       YYN       PP60                One provider knew all SP's medicines     
+                                 86                   D  .D:Don't know                                                              
+                                  7                   R  .R:Refused                                                                 
+                                609                   .  Inapplicable/Missing                                                       
+                              8,572                   1  1:Yes, definitely                                                          
+                                800                   2  2:Yes, somewhat                                                            
+                                554                   3  3:No                                                                       
+         Notes:  Applies only if ACW_PLACEPAR = 1.
+                 First available in 2017
+ 
+ACW_NOTAVAIL       RECORDNA  US37I               Med records not available for Dr appt    
+                                609                   .  Inapplicable/Missing                                                       
+                                588                   1  1:Yes                                                                      
+                              9,056                   2  2:No                                                                       
+                                196                   3  3:Not applicable to SP                                                     
+                                179                   4  4:Not sure                                                                 
+         Notes:  Applies only if ACW_PLACEPAR = 1.
+                 First available in 2017
+ 
+ACW_EMEDREC        YESFMT    US37K               Does PCP enter health info in computer   
+                                174                   D  .D:Don't know                                                              
+                              1,762                   .  Inapplicable/Missing                                                       
+                              8,256                   1  1:Yes                                                                      
+                                436                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PLACEPAR = 1.
+                 First available in 2017
+ 
+ACW_NUSNOTSK       YESFMT    US39                No USC: Seldom/never sick                
+                                  3                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                             10,020                   .  Inapplicable/Missing                                                       
+                                315                   1  1:Yes                                                                      
+                                289                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PLACEPAR = 2, .D, or .R.
+                 Previously named ACC_NUSNOTSK.
+ 
+ACW_NUSMOVIN       YESFMT    US39                No USC: Recent move to area              
+                                  2                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                             10,020                   .  Inapplicable/Missing                                                       
+                                 55                   1  1:Yes                                                                      
+                                550                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PLACEPAR = 2, .D, or .R.
+                 Previously named ACC_NUSMOVIN.
+ 
+ACW_NUSAVAIL       YESFMT    US39                No USC: USC no longer available          
+                                 11                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                             10,020                   .  Inapplicable/Missing                                                       
+                                149                   1  1:Yes                                                                      
+                                447                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PLACEPAR = 2, .D, or .R.
+                 Previously named ACC_NUSAVAIL.
+ 
+ACW_NUSDIFFP       YESFMT    US43                No USC: Like different place             
+                                  1                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                             10,020                   .  Inapplicable/Missing                                                       
+                                150                   1  1:Yes                                                                      
+                                456                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PLACEPAR = 2, .D, or .R.
+                 Previously named ACC_NUSDIFFP.
+ 
+ACW_NUSTOOFR       YESFMT    US43                No USC: Places are too far away          
+                                  4                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                             10,020                   .  Inapplicable/Missing                                                       
+                                 70                   1  1:Yes                                                                      
+                                533                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PLACEPAR = 2, .D, or .R.
+                 Previously named ACC_NUSTOOFR.
+ 
+ACW_NUSTOOEX       YESFMT    US43                No USC: Cost too expensive               
+                                  6                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                             10,020                   .  Inapplicable/Missing                                                       
+                                107                   1  1:Yes                                                                      
+                                494                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PLACEPAR = 2, .D, or .R.
+                 Previously named ACC_NUSTOOEX.
+ 
+KNW_KNOWMC         EASYDIFF  KN1                 How easy is Mcare to understand          
+                                355                   D  .D:Don't know                                                              
+                                  4                   R  .R:Refused                                                                 
+                              2,107                   1  1:Very easy                                                                
+                              5,100                   2  2:Somewhat easy                                                            
+                              2,425                   3  3:Somewhat difficult                                                       
+                                637                   4  4:Very difficult                                                           
+                 First available in 2017
+ 
+KNW_KCARKNOW       KN2F      KN2                 How much they know about Mcare           
+                                 87                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                              1,019                   1  1:Just about everything you need to know                                   
+                              3,951                   2  2:Most of what you need to know                                            
+                              3,548                   3  3:Some of what you need to know                                            
+                              1,381                   4  4:A little of what you need to know                                        
+                                639                   5  5:Almost none of what you need to know                                     
+                 First available in 2017
+ 
+KNW_COMPDESK       YESFMT    KN50A               Own/use a desktop/laptop computer        
+                                  2                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              6,737                   1  1:Yes                                                                      
+                              3,888                   2  2:No                                                                       
+                 First available in 2021
+ 
+KNW_COMPPHON       YESFMT    KN50A               Own/use a smartphone                     
+                                 32                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                              7,633                   1  1:Yes                                                                      
+                              2,961                   2  2:No                                                                       
+                 First available in 2021
+ 
+KNW_COMPTAB        YESFMT    KN50A               Own/use a tablet/portable computer       
+                                  5                   D  .D:Don't know                                                              
+                              4,621                   1  1:Yes                                                                      
+                              6,002                   2  2:No                                                                       
+                 First available in 2021
+ 
+KNW_KNETPRST       YESFMT    KN51A               Ever use Internet to get info            
+                                  6                   D  .D:Don't know                                                              
+                              7,650                   1  1:Yes                                                                      
+                              2,972                   2  2:No                                                                       
+                 First available in 2017
+ 
+KNW_KNETFRND       YESFMT    KN51B               Has someone to get info from Internet    
+                                  8                   D  .D:Don't know                                                              
+                              7,686                   .  Inapplicable/Missing                                                       
+                              1,687                   1  1:Yes                                                                      
+                              1,247                   2  2:No                                                                       
+         Notes:  Applies only when KNW_KNETPRST = 2.
+                 First available in 2017
+ 
+KNW_KNETOFTN       KNTOFTNF  KN51C               How often access Internet seeking info   
+                                 56                   D  .D:Don't know                                                              
+                                  4                   R  .R:Refused                                                                 
+                              1,291                   .  Inapplicable/Missing                                                       
+                              4,108                   1  1:Every day                                                                
+                              2,208                   2  2:A few times per week                                                     
+                              1,605                   3  3:A few times per month                                                    
+                              1,356                   4  4:A few times per year or less                                             
+         Notes:  Applies only if KNW_KNETPRST = 1 or KNW_KNETFRND = 1.
+                 First available in 2017
+ 
+KNW_KVSTSITE       YESFMT    KN53                Has visited website for Medicare info    
+                                 72                   D  .D:Don't know                                                              
+                                 19                   .  Inapplicable/Missing                                                       
+                              4,346                   1  1:Yes                                                                      
+                              6,191                   2  2:No                                                                       
+         Notes:  See KNW_KVSITWEB in prior years
+                 First available in 2020
+ 
+KNW_KCOMINTE       YESFMT    KN53A               Past yr, used Internet for health info   
+                                 50                   D  .D:Don't know                                                              
+                                  5                   R  .R:Refused                                                                 
+                              5,848                   1  1:Yes                                                                      
+                              4,725                   2  2:No                                                                       
+                 First available in 2020
+ 
+KNW_KCOMPRES       YESFMT    KN53A               Past yr, used Internet to fill Rx        
+                                 15                   D  .D:Don't know                                                              
+                                  6                   R  .R:Refused                                                                 
+                              2,442                   1  1:Yes                                                                      
+                              8,165                   2  2:No                                                                       
+                 First available in 2020
+ 
+KNW_KCOMAPPO       YESFMT    KN53A               Past yr, used Internet to schedule appt  
+                                 22                   D  .D:Don't know                                                              
+                                  6                   R  .R:Refused                                                                 
+                              3,070                   1  1:Yes                                                                      
+                              7,530                   2  2:No                                                                       
+                 First available in 2020
+ 
+KNW_KCOMCOMM       YESFMT    KN53A               Past yr, used Internet communicate w HCP 
+                                 27                   D  .D:Don't know                                                              
+                                  7                   R  .R:Refused                                                                 
+                              4,013                   1  1:Yes                                                                      
+                              6,581                   2  2:No                                                                       
+                 First available in 2020
+ 
+KNW_KCHIHELP       MCHIHELP  KN54                Who makes health insurance decisions     
+                                 70                   D  .D:Don't know                                                              
+                                  5                   R  .R:Refused                                                                 
+                              1,300                   .  Inapplicable/Missing                                                       
+                              6,352                   1  1:Makes decisions on own                                                   
+                              2,193                   2  2:Gets help on decisions                                                   
+                                708                   3  3:Someone else makes decisions                                             
+         Notes:  Inapplicable if winter interview done with proxy.
+                 First available in 2017
+ 
+TMW_TELMED         YESFMT    TELMED              Usual provider offers telehealth         
+                              1,422                   D  .D:Don't know                                                              
+                                  4                   R  .R:Refused                                                                 
+                                608                   .  Inapplicable/Missing                                                       
+                              5,559                   1  1:Yes                                                                      
+                              3,035                   2  2:No                                                                       
+         Notes:  Applies only if ACW_PLACEPAR = 1.
+                 First available in 2021
+ 
+TMW_TELMEDT1       TELEVID   TELMEDT1            Provider offers telephone or video appts 
+                                469                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                              5,069                   .  Inapplicable/Missing                                                       
+                              1,089                   1  1:Telephone                                                                
+                                610                   2  2:Video                                                                    
+                              3,389                   3  3:Both telephone and video                                                 
+         Notes:  Applies only if TMW_TELMED = 1.
+                 First available in 2021
+ 
+TMW_TELMEDDU       YESFMT    TELMEDDU            Provider offered tele appt (past yr)     
+                                 67                   D  .D:Don't know                                                              
+                              5,069                   .  Inapplicable/Missing                                                       
+                              2,504                   1  1:Yes                                                                      
+                              2,988                   2  2:No                                                                       
+         Notes:  Applies only if TMW_TELMED = 1.
+                 First available in 2021
+ 
+TMW_TELMEDT3       TELEVID   TELMEDT3            Offered appt was telephone or video      
+                                 21                   D  .D:Don't know                                                              
+                              8,124                   .  Inapplicable/Missing                                                       
+                                795                   1  1:Telephone                                                                
+                                594                   2  2:Video                                                                    
+                              1,094                   3  3:Both telephone and video                                                 
+         Notes:  Applies only if TMW_TELMEDDU = 1.
+                 First available in 2021
+ 
+TMW_TELMEDUS       YESFMT    TELMEDUS            SP had telehealth appt (past yr)         
+                                 46                   D  .D:Don't know                                                              
+                              5,069                   .  Inapplicable/Missing                                                       
+                              2,606                   1  1:Yes                                                                      
+                              2,907                   2  2:No                                                                       
+         Notes:  Applies only if TMW_TELMED = 1.
+                 First available in 2021
+ 
+TMW_TELMEDT4       TELEVID   TELMEDT4            Appt was telephone or video              
+                                  3                   D  .D:Don't know                                                              
+                              8,022                   .  Inapplicable/Missing                                                       
+                              1,209                   1  1:Telephone                                                                
+                                873                   2  2:Video                                                                    
+                                521                   3  3:Both telephone and video                                                 
+         Notes:  Applies only if TMW_TELMEDUS = 1.
+                 First available in 2021
+ 
+PUFWWGT                                          PUF Winter Ever Enrolled Full Sample Wt  
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW001                                          PUF Winter Ever Enrolled rep wt 1        
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW002                                          PUF Winter Ever Enrolled rep wt 2        
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW003                                          PUF Winter Ever Enrolled rep wt 3        
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW004                                          PUF Winter Ever Enrolled rep wt 4        
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW005                                          PUF Winter Ever Enrolled rep wt 5        
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW006                                          PUF Winter Ever Enrolled rep wt 6        
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW007                                          PUF Winter Ever Enrolled rep wt 7        
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW008                                          PUF Winter Ever Enrolled rep wt 8        
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW009                                          PUF Winter Ever Enrolled rep wt 9        
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW010                                          PUF Winter Ever Enrolled rep wt 10       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW011                                          PUF Winter Ever Enrolled rep wt 11       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW012                                          PUF Winter Ever Enrolled rep wt 12       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW013                                          PUF Winter Ever Enrolled rep wt 13       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW014                                          PUF Winter Ever Enrolled rep wt 14       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW015                                          PUF Winter Ever Enrolled rep wt 15       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW016                                          PUF Winter Ever Enrolled rep wt 16       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW017                                          PUF Winter Ever Enrolled rep wt 17       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW018                                          PUF Winter Ever Enrolled rep wt 18       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW019                                          PUF Winter Ever Enrolled rep wt 19       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW020                                          PUF Winter Ever Enrolled rep wt 20       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW021                                          PUF Winter Ever Enrolled rep wt 21       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW022                                          PUF Winter Ever Enrolled rep wt 22       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW023                                          PUF Winter Ever Enrolled rep wt 23       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW024                                          PUF Winter Ever Enrolled rep wt 24       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW025                                          PUF Winter Ever Enrolled rep wt 25       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW026                                          PUF Winter Ever Enrolled rep wt 26       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW027                                          PUF Winter Ever Enrolled rep wt 27       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW028                                          PUF Winter Ever Enrolled rep wt 28       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW029                                          PUF Winter Ever Enrolled rep wt 29       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW030                                          PUF Winter Ever Enrolled rep wt 30       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW031                                          PUF Winter Ever Enrolled rep wt 31       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW032                                          PUF Winter Ever Enrolled rep wt 32       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW033                                          PUF Winter Ever Enrolled rep wt 33       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW034                                          PUF Winter Ever Enrolled rep wt 34       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW035                                          PUF Winter Ever Enrolled rep wt 35       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW036                                          PUF Winter Ever Enrolled rep wt 36       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW037                                          PUF Winter Ever Enrolled rep wt 37       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW038                                          PUF Winter Ever Enrolled rep wt 38       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW039                                          PUF Winter Ever Enrolled rep wt 39       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW040                                          PUF Winter Ever Enrolled rep wt 40       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW041                                          PUF Winter Ever Enrolled rep wt 41       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW042                                          PUF Winter Ever Enrolled rep wt 42       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW043                                          PUF Winter Ever Enrolled rep wt 43       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW044                                          PUF Winter Ever Enrolled rep wt 44       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW045                                          PUF Winter Ever Enrolled rep wt 45       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW046                                          PUF Winter Ever Enrolled rep wt 46       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW047                                          PUF Winter Ever Enrolled rep wt 47       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW048                                          PUF Winter Ever Enrolled rep wt 48       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW049                                          PUF Winter Ever Enrolled rep wt 49       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW050                                          PUF Winter Ever Enrolled rep wt 50       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW051                                          PUF Winter Ever Enrolled rep wt 51       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW052                                          PUF Winter Ever Enrolled rep wt 52       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW053                                          PUF Winter Ever Enrolled rep wt 53       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW054                                          PUF Winter Ever Enrolled rep wt 54       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW055                                          PUF Winter Ever Enrolled rep wt 55       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW056                                          PUF Winter Ever Enrolled rep wt 56       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW057                                          PUF Winter Ever Enrolled rep wt 57       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW058                                          PUF Winter Ever Enrolled rep wt 58       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW059                                          PUF Winter Ever Enrolled rep wt 59       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW060                                          PUF Winter Ever Enrolled rep wt 60       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW061                                          PUF Winter Ever Enrolled rep wt 61       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW062                                          PUF Winter Ever Enrolled rep wt 62       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW063                                          PUF Winter Ever Enrolled rep wt 63       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW064                                          PUF Winter Ever Enrolled rep wt 64       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW065                                          PUF Winter Ever Enrolled rep wt 65       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW066                                          PUF Winter Ever Enrolled rep wt 66       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW067                                          PUF Winter Ever Enrolled rep wt 67       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW068                                          PUF Winter Ever Enrolled rep wt 68       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW069                                          PUF Winter Ever Enrolled rep wt 69       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW070                                          PUF Winter Ever Enrolled rep wt 70       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW071                                          PUF Winter Ever Enrolled rep wt 71       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW072                                          PUF Winter Ever Enrolled rep wt 72       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW073                                          PUF Winter Ever Enrolled rep wt 73       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW074                                          PUF Winter Ever Enrolled rep wt 74       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW075                                          PUF Winter Ever Enrolled rep wt 75       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW076                                          PUF Winter Ever Enrolled rep wt 76       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW077                                          PUF Winter Ever Enrolled rep wt 77       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW078                                          PUF Winter Ever Enrolled rep wt 78       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW079                                          PUF Winter Ever Enrolled rep wt 79       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW080                                          PUF Winter Ever Enrolled rep wt 80       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW081                                          PUF Winter Ever Enrolled rep wt 81       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW082                                          PUF Winter Ever Enrolled rep wt 82       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW083                                          PUF Winter Ever Enrolled rep wt 83       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW084                                          PUF Winter Ever Enrolled rep wt 84       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW085                                          PUF Winter Ever Enrolled rep wt 85       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW086                                          PUF Winter Ever Enrolled rep wt 86       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW087                                          PUF Winter Ever Enrolled rep wt 87       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW088                                          PUF Winter Ever Enrolled rep wt 88       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW089                                          PUF Winter Ever Enrolled rep wt 89       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW090                                          PUF Winter Ever Enrolled rep wt 90       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW091                                          PUF Winter Ever Enrolled rep wt 91       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW092                                          PUF Winter Ever Enrolled rep wt 92       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW093                                          PUF Winter Ever Enrolled rep wt 93       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW094                                          PUF Winter Ever Enrolled rep wt 94       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW095                                          PUF Winter Ever Enrolled rep wt 95       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW096                                          PUF Winter Ever Enrolled rep wt 96       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW097                                          PUF Winter Ever Enrolled rep wt 97       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW098                                          PUF Winter Ever Enrolled rep wt 98       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW099                                          PUF Winter Ever Enrolled rep wt 99       
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
+PUFW100                                          PUF Winter Ever Enrolled rep wt 100      
+                             10,628    LOW-HIGH          Range of Values                                                            
+ 
